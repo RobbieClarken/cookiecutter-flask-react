@@ -1,0 +1,30 @@
+{
+  "name": "{{cookiecutter.app_name}}",
+  "version": "0.1.0",
+  "description": "{{cookiecutter.description}}",
+  "author": "{{cookiecutter.full_name}}",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --config webpack.config.dev.js --watch",
+    "build": "webpack --config webpack.config.prod.js",
+    "test": "mocha --compilers js:babel-core/register --require ./tests/frontend/helper.js --recursive tests/frontend"
+  },
+  "dependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-2": "*",
+    "chai": "*",
+    "chai-enzyme": "*",
+    "enzyme": "*",
+    "mocha": "*",
+    "react": "*",
+    "react-addons-test-utils": "*",
+    "react-dom": "*",
+    "sinon": "*",
+    "sinon-chai": "*",
+    "webpack": "*"
+  }
+}
+
